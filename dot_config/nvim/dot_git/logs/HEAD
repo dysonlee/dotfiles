@@ -1,6 +1,0 @@
-0000000000000000000000000000000000000000 dac30c63a0c7aa4d0e6bc8968f85ea54762c2ed0 Dyson <dyson@Dysons-iMac.local> 1644050499 +1100	clone: from https://github.com/dysonlee/nvim.git
-dac30c63a0c7aa4d0e6bc8968f85ea54762c2ed0 ae560d5c5236210e81f97dfe88ab01e955658a9f Dyson <dyson@outlook.ie> 1647606616 +1100	pull: Fast-forward
-ae560d5c5236210e81f97dfe88ab01e955658a9f 8078a8198b2ea17757941995697fe0bc94714977 Dyson <dyson@outlook.ie> 1647832319 +1100	pull: Fast-forward
-8078a8198b2ea17757941995697fe0bc94714977 351f061f6e52e87f76acacd08643afed20c16f5d Dyson <dyson@outlook.ie> 1649672865 +1000	pull: Fast-forward
-351f061f6e52e87f76acacd08643afed20c16f5d b299cf59c244a33de9c26282f87bdab29afd9e8b Dyson <dyson@outlook.ie> 1649856484 +1000	commit: Add lsp html support
-b299cf59c244a33de9c26282f87bdab29afd9e8b d1e59ad54896db96a466e6e4aa000b0602bc7c74 Dyson <dyson@outlook.ie> 1650109301 +1000	commit: Add nvim-telescope config
