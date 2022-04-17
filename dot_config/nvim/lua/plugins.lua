@@ -28,7 +28,7 @@ return require('packer').startup(function()
     -- telescope extensions
     use("LinArcX/telescope-env.nvim")
     -- Comment
-    use 'numToStr/Comment.nvim'
+    use "terrortylor/nvim-comment"
     -- nvim-autopairs
     use 'windwp/nvim-autopairs'
     -- lualine
