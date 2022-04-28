@@ -21,8 +21,8 @@ map("i", "<C-h>", "<ESC>I", opt)
 map("i", "<C-l>", "<ESC>A", opt)
 
 -- ctrl u / ctrl + d  只移动9行，默认移动半屏
-map("n", "<C-u>", "9k", opt)
-map("n", "<C-d>", "9j", opt)
+map("n", "<C-u>", "6k", opt)
+map("n", "<C-d>", "6j", opt)
 
 -- visual模式下缩进代码
 map("v", "<", "<gv", opt)
