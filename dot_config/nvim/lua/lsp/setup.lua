@@ -8,7 +8,8 @@ local servers = {
     tsserver = require "lsp.config.ts",
     omnisharp = require "lsp.config.omnisharp",
     jsonls = require "lsp.config.json",
-    html = require "lsp.config.html"
+    html = require "lsp.config.html",
+    vuels = require "lsp.config.vue",
 }
 
 -- 自动安装 LanguageServers

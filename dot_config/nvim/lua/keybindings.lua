@@ -65,15 +65,12 @@ map("n", "<A-l>", "<C-w>l", opt)
 map('n', '<C-n>', ':NvimTreeToggle<CR>', opt)
 
 -- bufferline 左右Tab切换
-map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
-map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
+map("n", "<A-Left>", ":BufferLineCyclePrev<CR>", opt)
+map("n", "<A-Right>", ":BufferLineCycleNext<CR>", opt)
 map("n", "<C-w>", ":bd<CR>", opt)
 
 -- bufferline pick
 map("n", "<A-p>", ":BufferLinePick<CR>", opt)
-
--- hop
-map("n", "<C-e>", ":HopWord<CR>", opt)
 
 -- Telescope
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)

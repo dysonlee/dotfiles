@@ -109,11 +109,6 @@ _G.packer_plugins = {
     path = "/Users/dyson/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  ["hop.nvim"] = {
-    loaded = true,
-    path = "/Users/dyson/.local/share/nvim/site/pack/packer/start/hop.nvim",
-    url = "https://github.com/phaazon/hop.nvim"
-  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/Users/dyson/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",

@@ -14,7 +14,6 @@ lua require('plugin-config/nvim-treesitter')
 lua require('plugin-config/nvim-telescope')
 lua require('plugin-config/indent_blankline')
 lua require('plugin-config/nvim-comment')
-lua require('plugin-config/hop')
 lua require('lsp/setup')
 lua require('lsp/cmp')
 

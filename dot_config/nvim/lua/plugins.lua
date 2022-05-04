@@ -43,8 +43,6 @@ return require('packer').startup(function()
     use 'tpope/vim-sleuth'
     -- indent blankline
     use "lukas-reineke/indent-blankline.nvim"
-    -- Hop is an EasyMotion-like plugin allowing you to jump anywhere in a document with as few keystrokes as possible
-    use "phaazon/hop.nvim"
 
     ------------------------------ LSP ------------------------------
     -- Lspconfig
