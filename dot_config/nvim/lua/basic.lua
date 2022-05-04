@@ -81,4 +81,6 @@ vim.o.wildmenu = true
 vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.pumheight = 10
 -- always show tabline
-vim.o.showtabline = 4
+vim.o.showtabline = 2
+-- 配置剪切板
+vim.opt.clipboard = "unnamedplus"

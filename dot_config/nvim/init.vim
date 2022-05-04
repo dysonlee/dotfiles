@@ -4,6 +4,8 @@ lua require('basic')
 lua require('plugins')
 " 快捷键映射
 lua require('keybindings')
+" autocmds
+lua require('autocmds')
 
 " 插件配置
 lua require('plugin-config/nvim-tree')
@@ -18,9 +20,6 @@ lua require('lsp/setup')
 lua require('lsp/cmp')
 
 colorscheme vscode
-
-" 从系统剪切板拷贝黏贴
-set clipboard=unnamed
 
 " Make 'd' to delete something instead of cut
 vnoremap d "_d
