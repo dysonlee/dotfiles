@@ -5,11 +5,11 @@ local lsp_installer = require "nvim-lsp-installer"
 -- { key: 语言 value: 配置文件 }
 local servers = {
     sumneko_lua = require "lsp.config.lua",
-    tsserver = require "lsp.config.ts",
-    omnisharp = require "lsp.config.omnisharp",
-    jsonls = require "lsp.config.json",
-    html = require "lsp.config.html",
-    vuels = require "lsp.config.vue",
+    tsserver = {},
+    omnisharp = {},
+    jsonls = {},
+    html = {},
+    vuels = {}
 }
 
 -- 自动安装 LanguageServers
@@ -31,7 +31,7 @@ lsp_installer.on_server_ready(function(server)
                 vim.api.nvim_buf_set_keymap(bufnr, ...)
             end
             -- 绑定快捷键
-            require('keybindings').maplsp(buf_set_keymap)
+            require("keybindings").maplsp(buf_set_keymap)
         end
         opts.flags = {
             debounce_text_changes = 150
