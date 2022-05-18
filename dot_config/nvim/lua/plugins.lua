@@ -43,10 +43,6 @@ return require("packer").startup(function()
     use "lukas-reineke/indent-blankline.nvim"
     -- This plugin automatically adjusts "shiftwidth" and "expandtab" heuristically based on the current file
     use "tpope/vim-sleuth"
-    -- easymotion
-    use "easymotion/vim-easymotion"
-    use "haya14busa/incsearch.vim"
-    use "haya14busa/incsearch-easymotion.vim"
 
     ------------------------------ LSP ------------------------------
     -- Lspconfig
