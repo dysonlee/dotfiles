@@ -26,6 +26,10 @@ map("n", "<C-d>", "6j", opt)
 map("v", "<", "<gv", opt)
 map("v", ">", ">gv", opt)
 
+-- magic search
+map("n", "/", "/\\v", { noremap = true, silent = false })
+map("v", "/", "/\\v", { noremap = true, silent = false })
+
 ------------------------------ 分屏 ------------------------------
 -- 分屏快捷键
 map("n", "sv", ":vsp<CR>", opt)

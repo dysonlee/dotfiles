@@ -4,7 +4,7 @@ return require("packer").startup(function()
     ------------------------------ Plugins ------------------------------
     -- theme
     use "dysonlee/vscode.nvim"
-    use "lifepillar/vim-solarized8"
+    use "overcache/NeoSolarized"
     -- nvim-tree
     use {
         "kyazdani42/nvim-tree.lua",
