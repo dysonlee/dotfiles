@@ -4,7 +4,7 @@ return require("packer").startup(function()
     ------------------------------ Plugins ------------------------------
     -- theme
     use "dysonlee/vscode.nvim"
-    use "overcache/NeoSolarized"
+    use "lifepillar/vim-solarized8"
     -- nvim-tree
     use {
         "kyazdani42/nvim-tree.lua",
@@ -43,6 +43,15 @@ return require("packer").startup(function()
     use "lukas-reineke/indent-blankline.nvim"
     -- This plugin automatically adjusts "shiftwidth" and "expandtab" heuristically based on the current file
     use "tpope/vim-sleuth"
+    --
+    use {
+        "anuvyklack/pretty-fold.nvim",
+        requires = "anuvyklack/nvim-keymap-amend", -- only for preview
+        config = function()
+            require("pretty-fold").setup()
+            require("pretty-fold.preview").setup()
+        end
+    }
 
     ------------------------------ LSP ------------------------------
     -- Lspconfig

@@ -25,10 +25,10 @@ colorscheme vscode
 vnoremap d "_d
 
 " 修复在iTerm2下退出后光标依旧显示为block的问题
-augroup RestoreCursorShapeOnExit
-    autocmd!
-    autocmd VimLeave * set guicursor=a:hor20
-augroup END
+" augroup RestoreCursorShapeOnExit
+"     autocmd!
+"     autocmd VimLeave * set guicursor=a:hor20
+" augroup END
 
 " 背景透明
 highlight Normal ctermbg=none guibg=none
