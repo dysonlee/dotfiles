@@ -48,10 +48,10 @@ map("n", "s,", ":vertical resize -20<CR>", opt)
 map("n", "s.", ":vertical resize +20<CR>", opt)
 
 -- alt + hjkl  窗口之间跳转
-map("n", "<A-Left>", "<C-w>h", opt)
-map("n", "<A-Down>", "<C-w>j", opt)
-map("n", "<A-Up>", "<C-w>k", opt)
-map("n", "<A-Right>", "<C-w>l", opt)
+map("n", "<A-h>", "<C-w>h", opt)
+map("n", "<A-j>", "<C-w>j", opt)
+map("n", "<A-k>", "<C-w>k", opt)
+map("n", "<A-l>", "<C-w>l", opt)
 
 ------------------------------ Plugins 快捷键 ------------------------------
 -- treesitter fold
@@ -62,8 +62,8 @@ map("n", "Z", ":foldopen<CR>", opt)
 map('n', '<C-n>', ':NvimTreeToggle<CR>', opt)
 
 -- bufferline 左右Tab切换
-map("n", "<C-9>", ":BufferLineCyclePrev<CR>", opt)
-map("n", "<C-0>", ":BufferLineCycleNext<CR>", opt)
+map("n", "<A-Left>", ":BufferLineCyclePrev<CR>", opt)
+map("n", "<A-Right>", ":BufferLineCycleNext<CR>", opt)
 map("n", "<C-w>", ":bd<CR>", opt)
 
 -- Telescope
