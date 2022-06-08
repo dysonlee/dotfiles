@@ -4,4 +4,11 @@ if status is-interactive
 
     alias vim="nvim"
     alias vi="nvim"
+
+    # nvm config
+    function nvm
+        bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
+    end
+    set -x NVM_DIR ~/.nvm
+    nvm use default --silent
 end
