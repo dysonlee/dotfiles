@@ -1,4 +1,4 @@
-" 基础设置
+" 基础设置init.vim
 lua require('basic')
 " Packer插件管理
 lua require('plugins')
@@ -16,8 +16,10 @@ lua require('plugin-config/nvim-treesitter')
 lua require('plugin-config/nvim-telescope')
 lua require('plugin-config/indent_blankline')
 lua require('plugin-config/nvim-comment')
+lua require('plugin-config/nvim-ts-autotag')
 lua require('lsp/setup')
 lua require('lsp/cmp')
+source ~/.config/nvim/lua/plugin-config/vim-easymotion.vim
 
 colorscheme vscode
 

@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  NeoSolarized = {
+    loaded = true,
+    path = "/Users/dyson/.local/share/nvim/site/pack/packer/start/NeoSolarized",
+    url = "https://github.com/overcache/NeoSolarized"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/Users/dyson/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -108,6 +113,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/dyson/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["incsearch-easymotion.vim"] = {
+    loaded = true,
+    path = "/Users/dyson/.local/share/nvim/site/pack/packer/start/incsearch-easymotion.vim",
+    url = "https://github.com/haya14busa/incsearch-easymotion.vim"
+  },
+  ["incsearch.vim"] = {
+    loaded = true,
+    path = "/Users/dyson/.local/share/nvim/site/pack/packer/start/incsearch.vim",
+    url = "https://github.com/haya14busa/incsearch.vim"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
@@ -174,6 +189,11 @@ _G.packer_plugins = {
     path = "/Users/dyson/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/Users/dyson/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/dyson/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -210,15 +230,10 @@ _G.packer_plugins = {
     path = "/Users/dyson/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["vim-sleuth"] = {
+  ["vim-easymotion"] = {
     loaded = true,
-    path = "/Users/dyson/.local/share/nvim/site/pack/packer/start/vim-sleuth",
-    url = "https://github.com/tpope/vim-sleuth"
-  },
-  ["vim-solarized8"] = {
-    loaded = true,
-    path = "/Users/dyson/.local/share/nvim/site/pack/packer/start/vim-solarized8",
-    url = "https://github.com/lifepillar/vim-solarized8"
+    path = "/Users/dyson/.local/share/nvim/site/pack/packer/start/vim-easymotion",
+    url = "https://github.com/easymotion/vim-easymotion"
   },
   ["vim-vsnip"] = {
     loaded = true,
