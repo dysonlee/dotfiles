@@ -714,7 +714,7 @@
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.14910027384757996</real>
+				<real>0.1491314172744751</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -765,9 +765,9 @@
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.92681378126144409</real>
+				<real>0.9268307089805603</real>
 				<key>Red Component</key>
-				<real>0.70214027166366577</real>
+				<real>0.70213186740875244</real>
 			</dict>
 			<key>Cursor Text Color</key>
 			<dict>
@@ -781,7 +781,7 @@
 				<real>0.094117647058823528</real>
 			</dict>
 			<key>Cursor Type</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
@@ -1110,11 +1110,11 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73422712087631226</real>
+				<real>0.73423302173614502</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.35915297269821167</real>
+				<real>0.35916060209274292</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
