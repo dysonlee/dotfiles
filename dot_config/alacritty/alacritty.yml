@@ -33,7 +33,7 @@ window:
   # fall back to the window manager's recommended size.
   dimensions:
     columns: 200
-    lines: 45
+    lines: 40
 
   # Window position (changes require restart)
   #
@@ -69,7 +69,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 1
+  opacity: 0.9
 
   # Startup Mode (changes require restart)
   #
@@ -119,8 +119,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    # family: CodeNewRoman Nerd Font
-    family: Monaco Nerd Font Mono
+    family: CodeNewRoman Nerd Font
 
     # The `style` can be specified to pick a specific face.
     #style: Regular
@@ -159,21 +158,21 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 18
+  size: 20
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
   offset:
     x: 0
-    y: 5
+    y: 20
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the
   # right, increasing `y` moves the glyph upward.
   glyph_offset:
     x: 0
-    y: 5
+    y: 8
 
   # Thin stroke font rendering (macOS only)
   #
@@ -393,7 +392,7 @@ cursor:
     #   - ▇ Block
     #   - _ Underline
     #   - | Beam
-    shape: Underline
+    shape: Block
 
     # Cursor blinking state
     #
@@ -402,7 +401,7 @@ cursor:
     #   - Off: Disable blinking by default
     #   - On: Enable blinking by default
     #   - Always: Force the cursor to always blink
-    #blinking: Off
+    blinking: Always
 
   # Vi mode cursor style
   #
@@ -875,6 +874,10 @@ key_bindings:
   - { key: T,              mods: Command,                     chars: "\x02\x63"             }
   - { key: LBracket,       mods: Command,                     chars: "\x02\x10"             }
   - { key: RBracket,       mods: Command,                     chars: "\x02\x0e"             }
+  - { key: J,              mods: Alt,                         chars: "\x1bj"                }
+  - { key: K,              mods: Alt,                         chars: "\x1bk"                }
+  - { key: H,              mods: Alt,                         chars: "\x1bh"                }
+  - { key: L,              mods: Alt,                         chars: "\x1bl"                }
 
 #debug:
   # Display the time it takes to redraw each frame.
@@ -910,7 +913,7 @@ colors:
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
     text: '0xd8d8d8'
-    cursor: '0xd8d8d8'
+    cursor: '0x505050'
 
   # Normal colors
   normal:
