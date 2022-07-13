@@ -54,11 +54,7 @@ return require("packer").startup(function()
       require("pretty-fold.preview").setup()
     end
   }
-  -- easymotion
-  use "easymotion/vim-easymotion"
-  use "haya14busa/incsearch.vim"
-  use "haya14busa/incsearch-easymotion.vim"
-
+  use("mhartington/formatter.nvim")
   ------------------------------ LSP ------------------------------
   -- Lspconfig
   use { "neovim/nvim-lspconfig", "williamboman/nvim-lsp-installer" }

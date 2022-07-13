@@ -4,8 +4,6 @@ lua require('basic')
 lua require('plugins')
 " 快捷键映射
 lua require('keybindings')
-" autocmds
-lua require('autocmds')
 
 " 插件配置
 lua require('plugin-config/nvim-tree')
@@ -17,9 +15,10 @@ lua require('plugin-config/nvim-telescope')
 lua require('plugin-config/indent_blankline')
 lua require('plugin-config/nvim-comment')
 lua require('plugin-config/nvim-ts-autotag')
-lua require('plugin-config/null-ls')
 lua require('lsp/setup')
 lua require('lsp/cmp')
+lua require('lsp/null-ls')
+lua require('lsp/formatter')
 
 colorscheme vscode
 
