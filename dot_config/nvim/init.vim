@@ -20,7 +20,6 @@ lua require('plugin-config/nvim-ts-autotag')
 lua require('plugin-config/null-ls')
 lua require('lsp/setup')
 lua require('lsp/cmp')
-source ~/.config/nvim/lua/plugin-config/vim-easymotion.vim
 
 colorscheme vscode
 

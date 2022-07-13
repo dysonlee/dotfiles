@@ -106,10 +106,10 @@ pluginKeys.comment = {
 }
 
 -- ctrl + /
-map("n", "<C-_>", "gcc", {
+map("n", "<C-/>", "gcc", {
   noremap = false
 })
-map("v", "<C-_>", "gcc", {
+map("v", "<C-/>", "gcc", {
   noremap = false
 })
 
@@ -126,7 +126,7 @@ pluginKeys.maplsp = function(mapbuf)
   mapbuf('n', 'gp', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opt)
   mapbuf('n', 'gn', '<cmd>lua vim.diagnostic.goto_next()<CR>', opt)
 
-  mapbuf("n", "<leader>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opt)
+  mapbuf("n", "<leader>k", "<cmd>lua vim.lsp.buf.formatting()<CR>", opt)
 end
 
 -- nvim-cmp 自动补全
