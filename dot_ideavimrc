@@ -1,0 +1,33 @@
+let mapleader = " "
+
+nnoremap ; :
+
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+
+nnoremap <Leader>o :<C-u>action RecentProjectListGroup<CR>
+nnoremap ga :<C-u>action GotoAction<CR>
+nnoremap gb :<C-u>action JumpToLastChange<CR>
+nnoremap gc :<C-u>action GotoClass<CR>
+nnoremap gd :<C-u>action GotoDeclaration<CR>
+nnoremap gs :<C-u>action GotoSuperMethod<CR>
+nnoremap gi :<C-u>action GotoImplementation<CR>
+nnoremap gf :<C-u>action GotoFile<CR>
+nnoremap gm :<C-u>action GotoSymbol<CR>
+nnoremap gu :<C-u>action ShowUsages<CR>
+nnoremap gt :<C-u>action GotoTest<CR>
+nnoremap gp :<C-u>action FindInPath<CR>
+nnoremap gr :<C-u>action RecentFiles<CR>
+nnoremap gh :<C-u>action Back<CR>
+nnoremap gl :<C-u>action Forward<CR>
+
+nnoremap ta :action Annotate<cr>  
+nnoremap tb :action ToggleLineBreakpoint<cr>  
+nnoremap tm :action ToggleBookmark<cr>  
+nnoremap tp :action ActivateProjectToolWindow<CR>
+
+nnoremap <space>h gT
+nnoremap <space>l gt
+
