@@ -43,17 +43,6 @@ return require("packer").startup(function()
   }
   -- indent blankline
   use "lukas-reineke/indent-blankline.nvim"
-  -- Pretty Fold is a lua plugin for Neovim which has two separate features:
-  -- * Framework for easy foldtext customization. Filetype specific and foldmethod specific configuration is supported.
-  -- * Folded region preview (like in QtCreator).
-  use {
-    "anuvyklack/pretty-fold.nvim",
-    requires = "anuvyklack/nvim-keymap-amend", -- only for preview
-    config = function()
-      require("pretty-fold").setup()
-      require("pretty-fold.preview").setup()
-    end
-  }
   use("mhartington/formatter.nvim")
   ------------------------------ LSP ------------------------------
   -- Lspconfig
