@@ -106,10 +106,10 @@ pluginKeys.comment = {
 }
 
 -- ctrl + /
-map("n", "<C-/>", "gcc", {
+map("n", "<C-_>", "gcc", {
   noremap = false
 })
-map("v", "<C-/>", "gcc", {
+map("v", "<C-_>", "gcc", {
   noremap = false
 })
 
