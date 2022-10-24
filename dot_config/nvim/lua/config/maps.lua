@@ -22,6 +22,9 @@ keymap.set('n', '-', '<C-x>')
 -- Select all
 keymap.set('n', '<C-a>', 'gg<S-v>G')
 
+-- quit
+keymap.set('n', '<C-q>', '<Cmd>q<CR>')
+
 -- Save with root permission (not working for now)
 -- vim.api.nvim_create_user_command('W', 'w !sudo tee > /dev/null %', {})
 
