@@ -1,6 +1,3 @@
--- Eviline config for lualine
--- Author: shadmansaleh
--- Credit: glepnir
 local lualine = require('lualine')
 
 -- Color table for highlights
@@ -278,4 +275,3 @@ ins_right({
 
 -- Now don't forget to initialize lualine
 lualine.setup(config)
-

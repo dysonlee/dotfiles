@@ -4,13 +4,13 @@ env:
 window:
   dimensions:
     columns: 200
-    lines: 30
+    lines: 35
 
-  decorations: full
+  decorations: transparent
 
   padding:
-    x: 12
-    y: 12
+    x: 18
+    y: 18
 
   opacity: 0.9
 
@@ -35,24 +35,24 @@ font:
     x: 1
     y: 8
 
-# shell:
-#   program: /usr/local/bin/fish
-#   args:
-#     - --login
-#     - --command
-#     - "tmux new-session -A -D -s main"
+shell:
+  program: /usr/local/bin/fish
+  args:
+    - --login
+    - --command
+    - "tmux new-session -A -D -s main"
 
 cursor:
   style:
     shape: Underline
     blinking: Always
 
-shell:
-  program: /usr/local/bin/fish
-  args:
-    - -l
-    - -c
-    - "tmux attach || tmux"
+# shell:
+#   program: /usr/local/bin/fish
+#   args:
+#     - -l
+#     - -c
+#     - "tmux attach || tmux"
 
 # Colors (Base16 Default Dark)
 colors:
@@ -92,30 +92,30 @@ colors:
 # colors:
 #   # Default colors
 #   primary:
-#     background: '0x002b36'
-#     foreground: '0x839496'
-
+#     background: "0x021c23"
+#     foreground: "0x839496"
+#
 #   # Normal colors
 #   normal:
-#     black:   '0x073642'
-#     red:     '0xdc322f'
-#     green:   '0x859900'
-#     yellow:  '0xb58900'
-#     blue:    '0x268bd2'
-#     magenta: '0xd33682'
-#     cyan:    '0x2aa198'
-#     white:   '0xeee8d5'
-
+#     black: "0x073642"
+#     red: "0xdc322f"
+#     green: "0x859900"
+#     yellow: "0xb58900"
+#     blue: "0x268bd2"
+#     magenta: "0xd33682"
+#     cyan: "0x2aa198"
+#     white: "0xeee8d5"
+#
 #   # Bright colors
 #   bright:
-#     black:   '0x002b36'
-#     red:     '0xcb4b16'
-#     green:   '0x586e75'
-#     yellow:  '0x657b83'
-#     blue:    '0x839496'
-#     magenta: '0x6c71c4'
-#     cyan:    '0x93a1a1'
-#     white:   '0xfdf6e3'
+#     black: "0x002b36"
+#     red: "0xcb4b16"
+#     green: "0x586e75"
+#     yellow: "0x657b83"
+#     blue: "0x839496"
+#     magenta: "0x6c71c4"
+#     cyan: "0x93a1a1"
+#     white: "0xfdf6e3"
 
 # Key bindings
 # A list with all available `key` names can be found here:
@@ -129,89 +129,106 @@ colors:
 #   `Alt` is mapped to `Esc`
 key_bindings:
   # ----- change font size ----
-  - { key: Key0,     mods: Command,       action: ResetFontSize    }
-  - { key: Equals,   mods: Command,       action: IncreaseFontSize }
-  - { key: Minus,    mods: Command,       action: DecreaseFontSize }
+  - { key: Key0, mods: Command, action: ResetFontSize }
+  - { key: Equals, mods: Command, action: IncreaseFontSize }
+  - { key: Minus, mods: Command, action: DecreaseFontSize }
 
   # ----- new pane/tab/window -----
-  - { key: D,        mods: Command,       chars: "\x1c\""   } # new vertical pane with default shell
-  - { key: D,        mods: Command|Shift, chars: "\x1c-"    } # new vertical pane with commands menu
-  - { key: Return,   mods: Command,       chars: "\x1c%"    } # new horizontal pane with default shell
-  - { key: Return,   mods: Command|Shift, chars: "\x1c|"    } # new horizontal pane with commands menu
-  - { key: T,        mods: Command,       chars: "\x1cc"    } # new tab with default shell
-  - { key: T,        mods: Command|Shift, chars: "\x1cC"    } # new tab with commands menu
-  - { key: N,        mods: Command,       chars: "\x1cS"    } # switch session in current window with local sessions menu
-  - { key: N,        mods: Command|Shift, command: { program: "/usr/local/bin/alacritty", args: ["msg", "create-window", "-e", "/usr/local/bin/fish", "--login", "--command", "tmux-sessions --all"] } } # open session in new window with all sessions menu across servers
+  - { key: D, mods: Command, chars: "\x1c\"" } # new vertical pane with default shell
+  - { key: D, mods: Command|Shift, chars: "\x1c-" } # new vertical pane with commands menu
+  - { key: Return, mods: Command, chars: "\x1c%" } # new horizontal pane with default shell
+  - { key: Return, mods: Command|Shift, chars: "\x1c|" } # new horizontal pane with commands menu
+  - { key: T, mods: Command, chars: "\x1cc" } # new tab with default shell
+  - { key: T, mods: Command|Shift, chars: "\x1cC" } # new tab with commands menu
+  - { key: N, mods: Command, chars: "\x1cS" } # switch session in current window with local sessions menu
+  - {
+      key: N,
+      mods: Command|Shift,
+      command:
+        {
+          program: "/usr/local/bin/alacritty",
+          args:
+            [
+              "msg",
+              "create-window",
+              "-e",
+              "/usr/local/bin/fish",
+              "--login",
+              "--command",
+              "tmux-sessions --all",
+            ],
+        },
+    } # open session in new window with all sessions menu across servers
 
   # ----- popup window -----
-  - { key: P,        mods: Command,       chars: "\x1cP"    } # close the pane
+  - { key: P, mods: Command, chars: "\x1cP" } # close the pane
 
   # ----- close pane/tab/window -----
-  - { key: W,        mods: Command,       chars: "\x1cx"    } # close the pane
-  - { key: W,        mods: Command|Shift, chars: "\x1c&"    } # close the tab
-  - { key: Q,        mods: Command,       chars: "\x1cd"    } # close the window
+  - { key: W, mods: Command, chars: "\x1cx" } # close the pane
+  - { key: W, mods: Command|Shift, chars: "\x1c&" } # close the tab
+  - { key: Q, mods: Command, chars: "\x1cd" } # close the window
 
   # ----- copy mode -----
-  - { key: F,        mods: Command,       chars: "\x1c[/"   } # enter vi copy mode, and search from up to down
-  - { key: F,        mods: Command|Shift, chars: "\x1c[?"   } # enter vi copy mode, search from down to up
+  - { key: F, mods: Command, chars: "\x1c[/" } # enter vi copy mode, and search from up to down
+  - { key: F, mods: Command|Shift, chars: "\x1c[?" } # enter vi copy mode, search from down to up
 
   # ----- misc shortcuts -----
-  - { key: I,        mods: Command,       chars: "\x1c:"    } # input tmux command
-  - { key: I,        mods: Command|Shift, chars: "\x1cI"    } # synchronize panes in the current window
-  - { key: R,        mods: Command,       chars: "\x1cR"    } # run command with commands menu
-  - { key: Z,        mods: Command,       chars: "\x1cz"    } # zoom toggle of the current pane.
-  - { key: Z,        mods: Command|Shift, chars: "\x1c "    } # retile panes in the current window with preset layouts
-  - { key: Comma,    mods: Command,       chars: "\x1c,"    } # rename tab
-  - { key: S,        mods: Command,       chars: "\x1b:w\x0a"} # Type <escape>:w<enter> to save vim
+  - { key: I, mods: Command, chars: "\x1c:" } # input tmux command
+  - { key: I, mods: Command|Shift, chars: "\x1cI" } # synchronize panes in the current window
+  - { key: R, mods: Command, chars: "\x1cR" } # run command with commands menu
+  - { key: Z, mods: Command, chars: "\x1cz" } # zoom toggle of the current pane.
+  - { key: Z, mods: Command|Shift, chars: "\x1c " } # retile panes in the current window with preset layouts
+  - { key: Comma, mods: Command, chars: "\x1c," } # rename tab
+  - { key: S, mods: Command, chars: "\x1b:w\x0a" } # Type <escape>:w<enter> to save vim
 
   # ----- navigate panes -----
-  - { key: H,        mods: Command,       chars: "\x1ch"    } # go to the pane left
-  - { key: J,        mods: Command,       chars: "\x1cj"    } # go to the pane above
-  - { key: K,        mods: Command,       chars: "\x1ck"    } # go to the pane below
-  - { key: L,        mods: Command,       chars: "\x1cl"    } # go to the pane right
-  - { key: Left,     mods: Command,       chars: "\x1ch"    }
-  - { key: Down,     mods: Command,       chars: "\x1cj"    }
-  - { key: Up,       mods: Command,       chars: "\x1ck"    }
-  - { key: Right,    mods: Command,       chars: "\x1cl"    }
+  - { key: H, mods: Command, chars: "\x1ch" } # go to the pane left
+  - { key: J, mods: Command, chars: "\x1cj" } # go to the pane above
+  - { key: K, mods: Command, chars: "\x1ck" } # go to the pane below
+  - { key: L, mods: Command, chars: "\x1cl" } # go to the pane right
+  - { key: Left, mods: Command, chars: "\x1ch" }
+  - { key: Down, mods: Command, chars: "\x1cj" }
+  - { key: Up, mods: Command, chars: "\x1ck" }
+  - { key: Right, mods: Command, chars: "\x1cl" }
 
   # ----- resize panes -----
-  - { key: H,        mods: Command|Shift, chars: "\x1cH"    } # resize the current pane left
-  - { key: J,        mods: Command|Shift, chars: "\x1cJ"    } # resize the current pane above
-  - { key: K,        mods: Command|Shift, chars: "\x1cK"    } # resize the current pane below
-  - { key: L,        mods: Command|Shift, chars: "\x1cL"    } # resize the current pane right
-  - { key: Left,     mods: Command|Shift, chars: "\x1cH"    }
-  - { key: Down,     mods: Command|Shift, chars: "\x1cJ"    }
-  - { key: Up,       mods: Command|Shift, chars: "\x1cK"    }
-  - { key: Right,    mods: Command|Shift, chars: "\x1cL"    }
+  - { key: H, mods: Command|Shift, chars: "\x1cH" } # resize the current pane left
+  - { key: J, mods: Command|Shift, chars: "\x1cJ" } # resize the current pane above
+  - { key: K, mods: Command|Shift, chars: "\x1cK" } # resize the current pane below
+  - { key: L, mods: Command|Shift, chars: "\x1cL" } # resize the current pane right
+  - { key: Left, mods: Command|Shift, chars: "\x1cH" }
+  - { key: Down, mods: Command|Shift, chars: "\x1cJ" }
+  - { key: Up, mods: Command|Shift, chars: "\x1cK" }
+  - { key: Right, mods: Command|Shift, chars: "\x1cL" }
 
   # ----- navigate tabs -----
-  - { key: B,        mods: Command,       chars: "\x1c^"    } # back to last tab
-  - { key: LBracket, mods: Command,       chars: "\x1cp"    } # go to previous tab
-  - { key: RBracket, mods: Command,       chars: "\x1cn"    } # go to next tab
-  - { key: Key1,     mods: Command,       chars: "\x1c1"    } # go to tab 1..9
-  - { key: Key2,     mods: Command,       chars: "\x1c2"    }
-  - { key: Key3,     mods: Command,       chars: "\x1c3"    }
-  - { key: Key4,     mods: Command,       chars: "\x1c4"    }
-  - { key: Key5,     mods: Command,       chars: "\x1c5"    }
-  - { key: Key6,     mods: Command,       chars: "\x1c6"    }
-  - { key: Key7,     mods: Command,       chars: "\x1c7"    }
-  - { key: Key8,     mods: Command,       chars: "\x1c8"    }
-  - { key: Key9,     mods: Command,       chars: "\x1c9"    }
+  - { key: B, mods: Command, chars: "\x1c^" } # back to last tab
+  - { key: LBracket, mods: Command, chars: "\x1cp" } # go to previous tab
+  - { key: RBracket, mods: Command, chars: "\x1cn" } # go to next tab
+  - { key: Key1, mods: Command, chars: "\x1c1" } # go to tab 1..9
+  - { key: Key2, mods: Command, chars: "\x1c2" }
+  - { key: Key3, mods: Command, chars: "\x1c3" }
+  - { key: Key4, mods: Command, chars: "\x1c4" }
+  - { key: Key5, mods: Command, chars: "\x1c5" }
+  - { key: Key6, mods: Command, chars: "\x1c6" }
+  - { key: Key7, mods: Command, chars: "\x1c7" }
+  - { key: Key8, mods: Command, chars: "\x1c8" }
+  - { key: Key9, mods: Command, chars: "\x1c9" }
 
   # ----- move panes -----
-  - { key: Key1,     mods: Command|Shift, chars: "\x1c\x1b1"} # move the current pane to tab 1..9
-  - { key: Key2,     mods: Command|Shift, chars: "\x1c\x1b2"}
-  - { key: Key3,     mods: Command|Shift, chars: "\x1c\x1b3"}
-  - { key: Key4,     mods: Command|Shift, chars: "\x1c\x1b4"}
-  - { key: Key5,     mods: Command|Shift, chars: "\x1c\x1b5"}
-  - { key: Key6,     mods: Command|Shift, chars: "\x1c\x1b6"}
-  - { key: Key7,     mods: Command|Shift, chars: "\x1c\x1b7"}
-  - { key: Key8,     mods: Command|Shift, chars: "\x1c\x1b8"}
-  - { key: Key9,     mods: Command|Shift, chars: "\x1c\x1b9"}
+  - { key: Key1, mods: Command|Shift, chars: "\x1c\x1b1" } # move the current pane to tab 1..9
+  - { key: Key2, mods: Command|Shift, chars: "\x1c\x1b2" }
+  - { key: Key3, mods: Command|Shift, chars: "\x1c\x1b3" }
+  - { key: Key4, mods: Command|Shift, chars: "\x1c\x1b4" }
+  - { key: Key5, mods: Command|Shift, chars: "\x1c\x1b5" }
+  - { key: Key6, mods: Command|Shift, chars: "\x1c\x1b6" }
+  - { key: Key7, mods: Command|Shift, chars: "\x1c\x1b7" }
+  - { key: Key8, mods: Command|Shift, chars: "\x1c\x1b8" }
+  - { key: Key9, mods: Command|Shift, chars: "\x1c\x1b9" }
 
   # ----- Fix problem in IM -----
-  - { key: Back,                          action: ReceiveChar }
-  - { key: Slash,    mods: Control, chars: "\x1f" }
+  - { key: Back, action: ReceiveChar }
+  - { key: Slash, mods: Control, chars: "\x1f" }
 
   # Support Alt keys for macOS:
   # https://github.com/alexherbo2/alacritty-extended-keys/blob/master/keys.yml
