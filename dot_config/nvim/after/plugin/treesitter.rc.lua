@@ -6,6 +6,15 @@ ts.setup {
     enable = true,
     disable = {},
   },
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = '<CR>',
+      node_incremental = '<CR>',
+      node_decremental = '<BS>',
+      scope_incremental = '<TAB>'
+    }
+  },
   indent = {
     enable = true,
     disable = {},
@@ -18,6 +27,8 @@ ts.setup {
     "json",
     "yaml",
     "swift",
+    "javascript",
+    "typescript",
     "css",
     "html",
     "lua"
