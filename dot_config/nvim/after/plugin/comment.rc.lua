@@ -12,7 +12,7 @@ comment.setup({ -- Linters prefer comment and line to have a space in between ma
   -- Normal mode mapping left hand side
   line_mapping = "<leader>c",
   -- Visual/Operator mapping left hand side
-  operator_mapping = "<C-_>",
+  operator_mapping = "<C-/>",
   -- text object mapping, comment chunk,,
   comment_chunk_text_object = "ic",
   -- Hook function to call before commenting takes place
