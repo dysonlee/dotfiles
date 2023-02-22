@@ -8,6 +8,5 @@ mason.setup({
 })
 
 lspconfig.setup {
-  ensure_installed = { "tsserver", "sumneko_lua", "tailwindcss", "html", "cssls", "astro", "rust_analyzer" },
   automatic_installation = true
 }
