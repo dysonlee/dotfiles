@@ -72,6 +72,11 @@ nvim_lsp.flow.setup {
   capabilities = capabilities
 }
 
+nvim_lsp.flow.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
@@ -104,6 +109,12 @@ nvim_lsp.lua_ls.setup {
       },
     },
   },
+}
+
+nvim_lsp.volar.setup {
+  on_attach = on_attach,
+  filetypes = { "vue" },
+  capabilities = capabilities
 }
 
 nvim_lsp.html.setup {

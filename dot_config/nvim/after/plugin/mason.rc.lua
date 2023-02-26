@@ -4,9 +4,9 @@ local status2, lspconfig = pcall(require, "mason-lspconfig")
 if (not status2) then return end
 
 mason.setup({
-
 })
 
 lspconfig.setup {
-  automatic_installation = true
+  ensure_installed = { "tsserver", "lua_ls", "volar", "tailwindcss", "html", "tailwindcss", "cssls", "astro", "rust_analyzer" },
+  automatic_installation = false
 }

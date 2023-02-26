@@ -31,7 +31,8 @@ ts.setup {
     "typescript",
     "css",
     "html",
-    "lua"
+    "lua",
+    "vue"
   },
   autotag = {
     enable = true,
