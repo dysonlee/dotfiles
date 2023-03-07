@@ -7,6 +7,7 @@ mason.setup({
 })
 
 lspconfig.setup {
-  ensure_installed = { "tsserver", "lua_ls", "volar", "tailwindcss", "html", "tailwindcss", "cssls", "astro", "rust_analyzer" },
+  ensure_installed = { "tsserver", "lua_ls", "volar", "tailwindcss", "html", "tailwindcss", "cssls", "astro",
+    "rust_analyzer" },
   automatic_installation = false
 }

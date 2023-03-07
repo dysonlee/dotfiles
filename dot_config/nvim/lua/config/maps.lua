@@ -9,6 +9,9 @@ keymap.set('n', ';', ':')
 -- Map 'jj' to <Esc>
 keymap.set('i', 'jj', '<ESC>')
 
+-- Map 'ctrl-s' to save
+keymap.set('n', '<C-s>', ':w<CR>', { noremap = true, silent = true })
+
 -- Magic search
 keymap.set('n', '/', '/\\v')
 keymap.set('v', '/', '/\\v')
