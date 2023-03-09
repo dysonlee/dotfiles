@@ -12,10 +12,10 @@ window:
   decorations: transparent
 
   padding:
-    x: 15
-    y: 20
+    x: 7
+    y: 18
 
-  opacity: 0.98
+  opacity: 1
 
   dynamic_padding: true
 
