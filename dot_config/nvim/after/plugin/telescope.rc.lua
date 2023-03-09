@@ -37,10 +37,19 @@ telescope.setup {
         },
       },
     },
+    aerial = {
+      -- Display symbols as <root>.<parent>.<symbol>
+      show_nesting = {
+        ['_'] = false, -- This key will be the default
+        json = true, -- You can set the option for specific filetypes
+        yaml = true,
+      }
+    }
   },
 }
 
 telescope.load_extension("file_browser")
+telescope.load_extension('aerial');
 
 vim.keymap.set('n', ';f',
   function()
@@ -76,3 +85,5 @@ vim.keymap.set("n", "sf", function()
     layout_config = { height = 40 }
   })
 end)
+
+vim.keymap.set('n', ';a', ":Telescope aerial<CR>")
