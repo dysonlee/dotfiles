@@ -1,0 +1,5 @@
+return {
+    Normal = {
+        ctermbg = "NONE"
+    }
+}
