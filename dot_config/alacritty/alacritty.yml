@@ -1,5 +1,5 @@
 import:
-  - ~/.config/alacritty/themes/base16_dark_default.yaml
+  - ~/.config/alacritty/themes/base16_default_dark.yaml
 
 env:
   TERM: xterm-256color
@@ -7,36 +7,40 @@ env:
 window:
   dimensions:
     columns: 125
-    lines: 22
+    lines: 25
 
-  decorations: buttonless
+  decorations: transparent
 
   padding:
-    x: 2
-    y: 2
+    x: 0
+    y: 0
 
-  opacity: 0.95
+  opacity: 0.9
 
   dynamic_padding: true
 
   dynamic_title: true
+
+  decorations_theme_variant: Light
 
 # Display tabs using this many cells
 tabspaces: 4
 
 font:
   normal:
-    family: CodeNewRoman Nerd Font Mono
+    family: Consolas NF
 
   size: 22
 
   offset:
     x: 1
-    y: 20
+    y: 18
 
   glyph_offset:
     x: 1
     y: 8
+
+  builtin_box_drawing: true
 
 shell:
   program: /opt/homebrew/bin/fish
@@ -47,7 +51,7 @@ shell:
 
 cursor:
   style:
-    shape: Underline
+    shape: Block
     blinking: Always
 
 # Key bindings
