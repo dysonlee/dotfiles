@@ -6,35 +6,46 @@ env:
 
 window:
   dimensions:
-    columns: 125
+    columns: 120
     lines: 25
 
   decorations: transparent
 
   padding:
-    x: 0
-    y: 0
+    x: 1
+    y: 1
 
-  opacity: 0.9
+  opacity: 0.98
 
-  dynamic_padding: true
+  dynamic_padding: false
 
+  # Allow terminal applications to change Alacritty's window title.
   dynamic_title: true
 
+  # Decorations theme variant
+  #
+  # Override the variant of the System theme/GTK theme/Wayland client side
+  # decorations. Commonly supported values are `Dark`, `Light`, and `None` for
+  # auto pick-up. Set this to `None` to use the default theme variant.
   decorations_theme_variant: Light
+
+  # Resize increments
+  #
+  # Prefer resizing window by discrete steps equal to cell dimensions.
+  resize_increments: true
 
 # Display tabs using this many cells
 tabspaces: 4
 
 font:
   normal:
-    family: Consolas NF
+    family: Monaco Nerd Font
 
   size: 22
 
   offset:
     x: 1
-    y: 18
+    y: 8
 
   glyph_offset:
     x: 1
