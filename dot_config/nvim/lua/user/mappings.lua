@@ -6,25 +6,17 @@
 return {
     -- first key is the mode
     n = {
-        -- second key is the lefthand side of the map
-        -- mappings seen under group name "Buffer"
-        ["<leader>bn"] = {
-            "<cmd>tabnew<cr>",
-            desc = "New tab"
-        },
-        ["<S-Tab>"] = {
+        ["<Tab>"] = {
             function()
                 require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1)
             end,
             desc = "Next buffer"
         },
-        ["<leader>bD"] = {
+        ["<C-q>"] = {
             function()
-                require("astronvim.utils.status").heirline.buffer_picker(function(bufnr)
-                    require("astronvim.utils.buffer").close(bufnr)
-                end)
+                require("astronvim.utils.buffer").close()
             end,
-            desc = "Pick to close"
+            desc = "Close buffer"
         },
         -- tables with the `name` key will be registered with which-key if it's installed
         -- this is useful for naming menus

@@ -7,4 +7,7 @@ return {{
         opts.winbar = nil
         return opts
     end
+}, {
+    "rcarriga/nvim-notify",
+    enabled = false
 }, {"Mofiqul/vscode.nvim"}, {"windwp/nvim-ts-autotag"}, {"overcache/NeoSolarized"}}
