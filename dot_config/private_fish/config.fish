@@ -1,13 +1,15 @@
-# Fisher related
-# A plugin manager for Fish—the friendly interactive shell.
-# * NVM support, make sure you have NVM installed first.
+# Fisher is a plugin manager for Fish—your friendly interactive shell
+# > curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 # > fisher install FabioAntunes/fish-nvm edc/bass
-# * z tracks the directories you visit
 # > fisher install jethrokuan/z
-#
-# Macports support
-# > fish_add_path /opt/local/bin
 
+# Homebrew
+set PATH /opt/homebrew/bin $PATH
+
+# Rust
+set PATH $HOME/.cargo/bin $PATH
+
+# Nvm
 if status is-interactive
     # nvm config
     function nvm
@@ -18,4 +20,3 @@ if status is-interactive
 
     alias vim="nvim"
 end
-
