@@ -39,17 +39,17 @@ tabspaces: 4
 
 font:
   normal:
-    family: Monaco Nerd Font
+    family: CodeNewRoman Nerd Font
 
   size: 22
 
   offset:
     x: 1
-    y: 8
+    y: 12
 
   glyph_offset:
     x: 1
-    y: 8
+    y: 6
 
   builtin_box_drawing: true
 
