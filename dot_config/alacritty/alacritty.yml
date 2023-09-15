@@ -6,16 +6,16 @@ env:
 
 window:
   dimensions:
-    columns: 105
-    lines: 25
+    columns: 115
+    lines: 20
 
   decorations: transparent
 
   padding:
-    x: 2
-    y: 2
+    x: 5
+    y: 5
 
-  opacity: 0.98
+  opacity: 0.9
 
   dynamic_padding: false
 
@@ -40,16 +40,16 @@ tabspaces: 4
 font:
   normal:
     family: CodeNewRoman Nerd Font
-
+    
   size: 22
 
   offset:
     x: 1
-    y: 12
+    y: 18
 
   glyph_offset:
     x: 1
-    y: 6
+    y: 12
 
   builtin_box_drawing: true
 
@@ -62,7 +62,7 @@ shell:
 
 cursor:
   style:
-    shape: Block
+    shape: Underline
     blinking: Always
 
 # Key bindings
