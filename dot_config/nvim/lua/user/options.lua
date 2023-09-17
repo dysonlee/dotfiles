@@ -7,7 +7,8 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "auto", -- sets vim.opt.signcolumn to auto
         wrap = false, -- sets vim.opt.wrap'
-        guifont = "Monaco:h23",
+        guifont = "Monaco:h20",
+        termguicolors = true,
         linespace = 12,
         foldmethod = "manual"
     },
@@ -20,9 +21,9 @@ return {
         icons_enabled = true, -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
         ui_notifications_enabled = true, -- disable notifications when toggling UI elements
         -- **************** neovide settings ****************
-        neovide_transparency = 0.0,
-        linespace = 2,
-        neovide_background_color = "#1e1e1e" .. string.format("%x", math.floor(255 * 0.95)),
+        -- neovide_transparency = 0.0,
+        -- linespace = 1.4,
+        -- neovide_background_color = "#1e1e1e" .. string.format("%x", math.floor(255 * 0.95)),
         neovide_cursor_animate_in_insert_mode = false
         -- **************************************************
     }

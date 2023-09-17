@@ -995,9 +995,9 @@
 			<key>Blinking Cursor</key>
 			<true/>
 			<key>Blur</key>
-			<false/>
+			<true/>
 			<key>Blur Radius</key>
-			<real>20</real>
+			<real>25</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1418,13 +1418,13 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>HackNFM-Regular 25</string>
+			<string>CodeNewRomanNFM 22</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Non-ASCII Ligatures</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>Consolas 25</string>
+			<string>Monaco 22</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Password Manager Automatically</key>
@@ -1526,7 +1526,7 @@
 			<key>Use Tab Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.5</real>
+			<real>1.3999999999999999</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -1537,6 +1537,12 @@
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
+	<key>OpenArrangementAtStartup</key>
+	<false/>
+	<key>OpenBookmark</key>
+	<false/>
+	<key>OpenNoWindowsAtStartup</key>
+	<true/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>2</integer>
 	<key>PMPrintingExpandedStateForPrint2</key>

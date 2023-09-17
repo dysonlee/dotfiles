@@ -2,6 +2,7 @@ let mapleader = " "
 
 nnoremap ; :
 
+set rnu
 set ignorecase
 set smartcase
 set hlsearch
@@ -23,11 +24,10 @@ nnoremap gr :<C-u>action RecentFiles<CR>
 nnoremap gh :<C-u>action Back<CR>
 nnoremap gl :<C-u>action Forward<CR>
 
-nnoremap ta :action Annotate<cr>  
-nnoremap tb :action ToggleLineBreakpoint<cr>  
-nnoremap tm :action ToggleBookmark<cr>  
+nnoremap ta :action Annotate<CR>  
+nnoremap tb :action ToggleLineBreakpoint<CR>  
+nnoremap tm :action ToggleBookmark<CR>  
 nnoremap tp :action ActivateProjectToolWindow<CR>
 
-nnoremap <space>h gT
-nnoremap <space>l gt
-
+nnoremap <C-r> :action Debug<CR>
+nnoremap <C-s> :action Stop<CR>
