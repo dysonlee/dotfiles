@@ -1,0 +1,58 @@
+import = [
+  "~/.config/alacritty/themes/base16_default_dark.toml"
+]
+
+[cursor.style]
+blinking = "Always"
+shape = "Underline"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+builtin_box_drawing = true
+size = 22
+
+[font.normal]
+family = "CodeNewRoman Nerd Font"
+
+[font.glyph_offset]
+x = 1
+y = 8
+
+[font.offset]
+x = 1
+y = 8
+
+[shell]
+args = ["--login", "--command", "tmux new-session -A -D -s main"]
+program = "/opt/homebrew/bin/fish"
+
+[window]
+decorations = "transparent"
+decorations_theme_variant = "Light"
+dynamic_padding = false
+dynamic_title = true
+opacity = 0.9
+blur = true
+
+[window.dimensions]
+columns = 100
+lines = 18
+
+[window.padding]
+x = 5
+y = 5
+
+[keyboard]
+bindings = [
+  { key = "T", mods = "Command", chars = "\u0002c" },
+  { key = "W", mods = "Command", chars = "\u0002x" },
+  { key = "]", mods = "Command|Shift", chars = "\u0002n" },
+  { key = "[", mods = "Command|Shift", chars = "\u0002p" },
+  { key = "D", mods = "Command", chars = "\u0002%" },
+  { key = "H", mods = "Command", chars = "\u0002h" },
+  { key = "K", mods = "Command", chars = "\u0002k" },
+  { key = "J", mods = "Command", chars = "\u0002j" },
+  { key = "L", mods = "Command", chars = "\u0002l" },
+]
