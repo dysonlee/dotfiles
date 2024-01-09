@@ -33,7 +33,7 @@ decorations = "transparent"
 decorations_theme_variant = "Light"
 dynamic_padding = false
 dynamic_title = true
-opacity = 0.9
+opacity = 0.95
 blur = true
 
 [window.dimensions]
@@ -55,4 +55,13 @@ bindings = [
   { key = "K", mods = "Command", chars = "\u0002k" },
   { key = "J", mods = "Command", chars = "\u0002j" },
   { key = "L", mods = "Command", chars = "\u0002l" },
+  { key = "1", mods = "Command", chars = "\u00021" },
+  { key = "2", mods = "Command", chars = "\u00022" },
+  { key = "3", mods = "Command", chars = "\u00023" },
+  { key = "4", mods = "Command", chars = "\u00024" },
+  { key = "5", mods = "Command", chars = "\u00025" },
+  { key = "6", mods = "Command", chars = "\u00026" },
+  { key = "7", mods = "Command", chars = "\u00027" },
+  { key = "8", mods = "Command", chars = "\u00028" },
+  { key = "9", mods = "Command", chars = "\u00029" },
 ]
