@@ -1,13 +1,15 @@
+" leader key
 let mapleader = " "
 
+" settings
 nnoremap ; :
-
 set rnu
 set ignorecase
 set smartcase
 set hlsearch
 set incsearch
 
+" custom actions
 nnoremap <Leader>o :<C-u>action RecentProjectListGroup<CR>
 nnoremap ga :<C-u>action GotoAction<CR>
 nnoremap gb :<C-u>action JumpToLastChange<CR>
@@ -24,10 +26,32 @@ nnoremap gr :<C-u>action RecentFiles<CR>
 nnoremap gh :<C-u>action Back<CR>
 nnoremap gl :<C-u>action Forward<CR>
 
-nnoremap ta :action Annotate<CR>  
-nnoremap tb :action ToggleLineBreakpoint<CR>  
-nnoremap tm :action ToggleBookmark<CR>  
+nnoremap ta :action Annotate<CR>
+nnoremap tm :action ToggleBookmark<CR>
 nnoremap tp :action ActivateProjectToolWindow<CR>
 
-nnoremap <C-r> :action Debug<CR>
-nnoremap <C-s> :action Stop<CR>
+" Run, debug, stop
+nmap <leader>r  :action Run<CR>
+nmap <leader>d  :action Debug<CR>
+nmap <leader>s  :action Stop<CR>
+nmap <leader>rb :action Debugger.RemoveAllBreakpoints<CR>
+nmap <leader>b  :action ToggleLineBreakpoint<CR>
+
+" Git
+nmap <leader>gb :action Git.Branches<cr>
+nmap <leader>gp :action Git.Pull<cr>
+nmap <leader>gu :action Git.Push<cr>
+nmap <leader>gr :action Git.Rebase<cr>
+nmap <leader>gm :action Git.Merge<cr>
+
+nmap <leader>yy :action Vcs.Show.Local.Changes<cr>
+nmap <leader>yp :action Vcs.QuickListPopupAction<cr>
+nmap <leader>ya :action Annotate<cr>
+nmap <leader>yl :action Vcs.Show.Log<cr>
+nmap <leader>yd :action Compare.LastVersion<cr>
+nmap <leader>yP :action Git.Pull<cr>
+nmap <leader>yr :action Git.ResolveConflicts<cr>
+nmap <leader>yo :action Github.Open.In.Browser<cr>
+
+" Terminal
+nmap <leader>T :action ActivateTerminalToolWindow<cr>
