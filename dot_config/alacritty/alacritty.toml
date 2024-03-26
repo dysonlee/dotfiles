@@ -1,5 +1,5 @@
 import = [
-  "~/.config/alacritty/themes/base16_default_dark.toml"
+  "~/.config/alacritty/themes/solarized_dark.toml"
 ]
 
 [cursor.style]
@@ -11,34 +11,34 @@ TERM = "xterm-256color"
 
 [font]
 builtin_box_drawing = true
-size = 22
+size = 20
 
 [font.normal]
-family = "CodeNewRoman Nerd Font"
+family = "Monaco Nerd Font"
 
 [font.glyph_offset]
-x = 1
-y = 8
+x = 2
+y = 2
 
 [font.offset]
-x = 1
-y = 8
+x = 2
+y = 2
 
 [shell]
-args = ["--login", "--command", "tmux new-session -A -D -s main"]
 program = "/opt/homebrew/bin/fish"
+args = ["--login", "--command", "tmux new-session -A -D -s main"]
 
 [window]
 decorations = "transparent"
-decorations_theme_variant = "Light"
+decorations_theme_variant = "light"
 dynamic_padding = false
 dynamic_title = true
-opacity = 0.95
-blur = true
+opacity = 0.98
+blur = false
 
 [window.dimensions]
-columns = 100
-lines = 18
+columns = 120
+lines = 20
 
 [window.padding]
 x = 5
@@ -48,8 +48,8 @@ y = 5
 bindings = [
   { key = "T", mods = "Command", chars = "\u0002c" },
   { key = "W", mods = "Command", chars = "\u0002x" },
-  { key = "]", mods = "Command|Shift", chars = "\u0002n" },
-  { key = "[", mods = "Command|Shift", chars = "\u0002p" },
+  { key = "]", mods = "Command", chars = "\u0002n" },
+  { key = "[", mods = "Command", chars = "\u0002p" },
   { key = "D", mods = "Command", chars = "\u0002%" },
   { key = "H", mods = "Command", chars = "\u0002h" },
   { key = "K", mods = "Command", chars = "\u0002k" },
