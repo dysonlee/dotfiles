@@ -3,7 +3,7 @@ let mapleader = " "
 
 " settings
 nnoremap ; :
-set rnu
+" set rnu
 set ignorecase
 set smartcase
 set hlsearch
@@ -55,3 +55,4 @@ nmap <leader>yo :action Github.Open.In.Browser<cr>
 
 " Terminal
 nmap <leader>T :action ActivateTerminalToolWindow<cr>
+set ideajoin

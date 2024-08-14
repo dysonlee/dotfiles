@@ -4,7 +4,13 @@
 # > fisher install jethrokuan/z
 
 # Homebrew
-# set PATH /opt/homebrew/bin $PATH
+set PATH /opt/homebrew/bin $PATH
+
+# nvm
+set -gx NVM_DIR (brew --prefix nvm)
+
+# starship
+starship init fish | source
 
 # Rust
 # set PATH $HOME/.cargo/bin $PATH

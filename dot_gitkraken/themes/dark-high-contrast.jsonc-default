@@ -6,27 +6,38 @@
   "themeValues": {
     // values applied to the entire app
     "root": {
+
+      // Core Colors
+      "white":"#FFFFFF",
+      "black":"#000000",
       "red": "#D9413D",
       "orange": "#DE9B43",
       "yellow": "#ECB91C",
       "green": "#5CB85C",
+      "teal": "#2ece9d",
       "blue": "#4D88FF",
       "ltblue": "#5bc0de",
       "purple": "#c517b6",
+
+      // Background and panels
       "app__bg0": "#090A0B",
       "toolbar__bg0": "lighten(saturate(@app__bg0, 3%), 6%)",
       "toolbar__bg1": "lighten(@toolbar__bg0, 4%)",
       "toolbar__bg2": "lighten(@toolbar__bg1, 6%)",
-      "panel__bg0": "lighten(@app__bg0, 4%)",
+      "panel__bg0": "lighten(@app__bg0, 5%)",
       "panel__bg1": "lighten(@panel__bg0, 4%)",
       "panel__bg2": "lighten(@panel__bg1, 4%)",
+      "glass": "#00000033",
+      "glass-inverse-10": "#FFFFFF1A",
+      "glass-inverse-5": "#FFFFFF0D",
       "input__bg": "fade(#000000, 20%)",
       "input-bg-warn-color": "fade(@orange, 60%)",
-      "panel-border": "darken(@app__bg0, 4%)",
+      "panel-border": "fade(#FFFFFF, 8%)",
       "section-border": "fade(#FFFFFF, 8%)",
       "subtle-border": "fade(#FFFFFF, 4%)",
       "modal-overlay-color": "rgba(0,0,0,.5)",
-      // graph colors
+
+      // Graph colors
       "graph-color-0": "#15a0bf",
       "graph-color-1": "#0669f7",
       "graph-color-2": "#8e00c2",
@@ -37,8 +48,11 @@
       "graph-color-7": "#f2ca33",
       "graph-color-8": "#7bd938",
       "graph-color-9": "#2ece9d",
-      // text colors
-      // values starting with . aren't added to the CSS, they're just variables
+      "stats-added-color": "#347d39",
+      "stats-deleted-color": "#c93c37",
+      "stats-files-color": "#e2c08d",
+
+      // Text colors
       ".text-color": "#FFFFFF",
       "text-selected": "@.text-color",
       "text-normal": "fade(@.text-color, 78%)",
@@ -47,7 +61,11 @@
       "text-accent": "#93A9EC",
       "text-inverse": "#222222",
       "text-bright": "@.text-color",
-      // buttons
+      "text-dimmed": "fade(@text-normal, 20%)",
+      "text-dimmed-selected": "fade(@text-dimmed, 50%)",
+      "text-selected-row": "@text-selected",
+
+      // Buttons
       "btn-text": "@text-normal",
       "btn-text-hover": "@text-selected",
       "default-border": "@text-normal",
@@ -66,21 +84,22 @@
       "danger-border": "@red",
       "danger-bg": "fade(@red, 10%)",
       "danger-hover": "fade(@red, 40%)",
-      // states
       "hover-row": "fade(@blue, 15%)",
       "danger-row": "fade(@red, 40%)",
       "selected-row": "fade(@blue, 20%)",
+      "selected-row-border": "none",
       "warning-row": "fade(@orange, 40%)",
+
+      // Actions
       "droppable": "fade(@yellow, 30%)",
       "drop-target": "fade(@green, 50%)",
       "input--disabled": "fade(#000000, 10%)",
       "link-color": "#40c5ec",
       "link-color-bright": "#40c5ec",
       "form-control-focus": "@blue",
-      // various app elements
-      "scroll-thumb-border": "@app__bg0",
-      "scroll-thumb-bg": "@toolbar__bg2",
-      "scroll-thumb-bg-light": "lighten(@toolbar__bg2, 20%)",
+      "scroll-thumb-border": "rgba(0,0,0,0)",
+      "scroll-thumb-bg": "rgba(255,255,255,0.15)",
+      "scroll-thumb-bg-light": "rgba(0,0,0,0.15)",
       "wip-status": "fade(@blue, 40%)",
       "card__bg": "@panel__bg2",
       "card-shadow": "@rgba(0,0,0,.2)",
@@ -88,7 +107,6 @@
       "label__yellow-color": "#f2ca33",
       "label__light-blue-color": "#15a0bf",
       "label__purple-color": "#c517b6",
-      // component states
       "filtering": "fade(@blue, 50%)",
       "soloing": "fade(@orange, 50%)",
       "checked-out": "fade(@green, 30%)",
@@ -99,7 +117,8 @@
       "verified": "fade(@green, 30%)",
       "unverified": "fade(#ffffff, 10%)",
       "drop-sort-border": "@green",
-      // terminal
+
+      // Terminal
       "terminal__repo-name-color": "turquoise",
       "terminal__repo-branch-color": "violet",
       "terminal__repo-tag-color": "lightcoral",
@@ -125,7 +144,8 @@
       "terminal__brightMagenta": "#D670D6",
       "terminal__brightCyan": "#29B8DB",
       "terminal__brightWhite": "#E5E5E5",
-      // code editor
+
+      // Code editor
       "code-bg": "@app__bg0",
       "code-foreground": "@text-normal",
       "code-blame-color-0": "@graph-color-0",
@@ -149,7 +169,7 @@
       "conflict-output-border-color": "#c517b6",
       "conflict-output-color": "fade(@conflict-output-border-color, 25%)"
     },
-    // override specific values just for the toolbar
+    // Override specific values just for the toolbar
     "toolbar": {
       "text-selected": "rgba(255,255,255,1)",
       "text-normal": "rgba(255,255,255,.9)",
@@ -160,7 +180,7 @@
       "link-color": "#40c5ec",
       "btn-text": "var(--text-normal)"
     },
-    // override specific values just for the tabs bar
+    // Override specific values just for the tabs bar
     "tabsbar": {
       "text-selected": "rgba(255,255,255,1)",
       "text-normal": "rgba(255,255,255,.9)",

@@ -1,5 +1,5 @@
 import = [
-  "~/.config/alacritty/themes/solarized_dark.toml"
+  "~/.config/alacritty/themes/base16_default_dark.toml"
 ]
 
 [cursor.style]
@@ -14,15 +14,15 @@ builtin_box_drawing = true
 size = 20
 
 [font.normal]
-family = "Monaco Nerd Font"
+family = "CodeNewRoman Nerd Font"
 
 [font.glyph_offset]
-x = 2
-y = 2
+x = 1
+y = 1
 
 [font.offset]
-x = 2
-y = 2
+x = 1
+y = 1
 
 [shell]
 program = "/opt/homebrew/bin/fish"
@@ -43,6 +43,9 @@ lines = 20
 [window.padding]
 x = 5
 y = 5
+
+[scrolling]
+multiplier = 2
 
 [keyboard]
 bindings = [
